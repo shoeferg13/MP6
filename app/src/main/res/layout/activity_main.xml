@@ -15,4 +15,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="88dp"
+        android:layout_height="27dp"
+        android:text="Original Key"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="115dp"
+        android:layout_height="27dp"
+        android:text="Transposed Key"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="34dp" />
+
 </android.support.constraint.ConstraintLayout>
