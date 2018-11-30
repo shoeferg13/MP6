@@ -22,11 +22,20 @@ public class Transpose {
         notes.add("G#/A♭");
     }
     List<String> transposedNotes = new ArrayList<String>();
-    public List<String> changeNote(int halfSteps) {
-        for (int i = 0; i < notes.size(); i++) {
-            int newPosition = (i + halfSteps) % notes.size();
-            transposedNotes.add(newPosition, notes.get(i));
+    int halfSteps;
+    public List<String> changeNote() {
+        if (halfSteps == 0) {
+            return notes;
         }
-        return transposedNotes;
+        if (halfSteps > 0) {
+            for (int i = 0; i < notes.size(); i++) {
+                int newPosition = (i + halfSteps) % notes.size();
+                transposedNotes.add(newPosition, notes.get(i));
+            }
+            return transposedNotes;
+        }
+        if (halfSteps < 0) {
+
+        }
     }
 }
