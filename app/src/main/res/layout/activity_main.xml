@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,67 +7,75 @@
     android:background="#FFA500"
     >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/originalKey"
-        android:layout_width="134dp"
-        android:layout_height="47dp"
-        android:text="Original Key"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="32dp" />
+        <TextView
+            android:id="@+id/originalKey"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="47dp"
+            android:text="Original Key"
+            android:textSize="25dp" />
 
-    <EditText
-        android:id="@+id/transposedKeyEditText"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:imeOptions="actionDone"
-        android:inputType="number"
-        android:singleLine="true"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="291dp">
-        <requestFocus />
+        <EditText
+            android:id="@+id/transposedKeyEditText"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="291dp">
 
-    </EditText>
+            <requestFocus />
+        </EditText>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="181dp"
-        android:layout_height="37dp"
-        android:text="Transposed Key"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="238dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="181dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="Transposed Key"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="238dp" />
 
-    <EditText
-        android:id="@+id/originalKeyEditText"
-        android:layout_width="102dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:imeOptions="actionDone"
-        android:inputType="number"
-        android:singleLine="true"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="92dp">
+        <EditText
+            android:id="@+id/originalKeyEditText"
+            android:layout_width="102dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:singleLine="true"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="92dp">
 
-        <requestFocus />
+            <requestFocus />
+        </EditText>
 
-    </EditText>
-    <Button
-        android:id="@+id/button"
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Transpose!"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="422dp" />
 
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-
-        android:text="Transpose!"
-
-        tools:layout_editor_absoluteX="138dp"
-
-        tools:layout_editor_absoluteY="422dp" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
 
