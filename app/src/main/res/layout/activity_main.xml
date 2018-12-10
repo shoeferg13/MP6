@@ -23,7 +23,7 @@
             android:textSize="25dp" />
 
         <EditText
-            android:id="@+id/transposedKeyEditText"
+            android:id="@+id/originalKeyEditText"
             android:layout_gravity="center_horizontal"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -31,7 +31,7 @@
             android:layout_centerHorizontal="true"
             android:ems="10"
             android:imeOptions="actionDone"
-            android:inputType="number"
+            android:inputType="text"
             android:singleLine="true"
             tools:layout_editor_absoluteX="143dp"
             tools:layout_editor_absoluteY="291dp">
@@ -51,14 +51,14 @@
             tools:layout_editor_absoluteY="238dp" />
 
         <EditText
-            android:id="@+id/originalKeyEditText"
+            android:id="@+id/transposedKeyEditText"
             android:layout_width="102dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
             android:imeOptions="actionDone"
-            android:inputType="number"
+            android:inputType="text"
             android:singleLine="true"
             tools:layout_editor_absoluteX="141dp"
             tools:layout_editor_absoluteY="92dp">
@@ -78,5 +78,3 @@
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
-
-
